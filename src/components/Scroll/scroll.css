@@ -1,0 +1,51 @@
+.root {
+  background-color: darkgreen;
+  height: 100vh;
+  overflow: hidden;
+}
+.top-element {
+  background-color: yellow;
+  height: 100px;
+}
+.parent {
+  background-color: darkgrey;
+  height: 100%;
+  overflow: auto;
+  margin-bottom: 70px;
+}
+.child-one {
+  position: relative;
+  background-color: darkmagenta;
+  height: 50%;
+}
+.child-two {
+  background-color: darkorange;
+  height: calc(50% - 70px - 100px);
+  overflow: scroll;
+}
+.child-three {
+  position: fixed;
+  background-color: black;
+  height: 70px;
+  bottom: 0;
+  width: 100%;
+}
+
+.sticky {
+  position: sticky;
+  background-color: black;
+  top: 0;
+}
+
+.item {
+  height: 100px;
+  background-color: darkslateblue;
+}
+
+.child-two .item + .item {
+  margin-top: 8px;
+  background-color: blanchedalmond;
+}
+.child-two :nth-child(odd) {
+  background-color: brown !important;
+}
